@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         links: {
             github: 'https://github.com/Michael-05',
             linkedin: 'https://linkedin.com/in/usuario',
-            portfolio: 'https://miportafolio.com',
+            portfolio: './portafolio/index.html',
             email: 'mailto:u23247353@utp.edu.pe',
             cv: 'documents/cv.pdf',
             instagram: 'https://instagram.com/michael_cc'
