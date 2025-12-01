@@ -599,6 +599,18 @@ body {
     font-size: 24px;
 }
 
+.institution-icon-pedro {
+    width: 50px;
+    height: 50px;
+    background-color: var(--utp-white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--utp-white);
+    font-size: 24px;
+}
+
 .timeline-institution div {
     display: flex;
     flex-direction: column;

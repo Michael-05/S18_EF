@@ -33,10 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const nameElement = document.getElementById('studentName');
         const codeElement = document.getElementById('studentCode');
         const careerElement = document.getElementById('studentCareer');
+        const locationElement = document.getElementById('student-location');
 
         if (nameElement) nameElement.textContent = studentData.name;
         if (codeElement) codeElement.textContent = studentData.code;
         if (careerElement) careerElement.textContent = studentData.career;
+        if (locationElement) locationElement.textContent = studentData.location;
 
         console.log('ℹ️ Información del estudiante actualizada');
     }

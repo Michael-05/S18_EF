@@ -10,6 +10,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
 
+    const studentData = {
+        name: 'Jhon Michael Castillo Chinchay',
+        career: 'Ingeniería de Sistemas e Informática',
+        location: 'Chimbote, Perú'
+    }
+
+    function updateStudentInfo() {
+        const nameElement = document.getElementById('hero-name-cd');
+
+        if (nameElement) nameElement.textContent = studentData.name;
+    }
+
+    updateStudentInfo();
+
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
