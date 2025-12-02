@@ -292,24 +292,32 @@ body::before {
 }
 
 .link-icon {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     border-radius: 12px;
-    background: linear-gradient(135deg, var(--utp-red-primary), var(--utp-red-light));
+    background: var(--utp-gray-light);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background 0.25s ease, color 0.25s ease, opacity 0.25s ease;
 }
 
 .link-item:hover .link-icon {
-    transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.2);
+    background: linear-gradient(135deg, var(--utp-red-primary), var(--utp-red-light));
 }
 
 .link-icon i {
-    font-size: 24px;
+    font-size: 15px;
+    color: var(--utp-gray-dark);
+    transition: color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.8;
+}
+
+.link-item:hover .link-icon i {
     color: var(--utp-white);
+    opacity: 1;
 }
 
 .link-content {
@@ -322,6 +330,11 @@ body::before {
 .link-title {
     font-size: 16px;
     font-weight: 600;
+    color: var(--utp-gray-dark);
+    transition: color 0.25s ease;
+}
+
+.link-item:hover .link-title {
     color: var(--utp-red-dark);
 }
 
@@ -473,8 +486,8 @@ body::before {
     }
 
     .link-icon {
-        width: 44px;
-        height: 44px;
+        width: 40px;
+        height: 40px;
     }
 
     .link-icon i {
@@ -517,8 +530,8 @@ body::before {
     }
 
     .link-icon {
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
     }
 }
 
